@@ -39,6 +39,9 @@ bevy_derive.workspace = true
 bevy_image.workspace = true
 bytemuck.workspace = true
 uuid.workspace = true
+bevy_mesh.workspace = true
+bevy_camera.workspace = true
+bevy_shader.workspace = true
 
 [dev-dependencies]
 bevy = {workspace = true}
