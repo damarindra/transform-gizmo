@@ -36,7 +36,6 @@ use bevy_input::prelude::*;
 use bevy_math::{DQuat, DVec3, Vec2};
 use bevy_picking::hover::HoverMap;
 use bevy_platform::collections::HashMap;
-use bevy_render::prelude::*;
 use bevy_transform::prelude::*;
 use bevy_window::{PrimaryWindow, Window};
 use mouse_interact::MouseGizmoInteractionPlugin;
@@ -417,7 +416,7 @@ fn update_gizmos(
 
         match active_camera {
             Some(camera) => camera,
-            None => return, // no active cameras in the scene
+            _ => return, // no active cameras in the scene
         }
     };
 
